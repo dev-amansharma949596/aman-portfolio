@@ -3,8 +3,11 @@ import Footer from "../components/Footer";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Skills from "../sections/Skills";
-import Projects from "../sections/Projects";
-import Contact from "../sections/Contact";
+import ProjectsSlider from "../sections/ProjectsSlider"; 
+import Experience from "../sections/Experience";
+import LatestWork from "../sections/LatestWork";
+import Education from "../sections/Education";
+import ToolkitMarquee from "../sections/ToolkitMarquee";
 
 export default function Home() {
   return (
@@ -13,9 +16,12 @@ export default function Home() {
       <main className="min-h-screen bg-white text-gray-900 dark:bg-zinc-950 dark:text-gray-100">
         <Hero />
         <About />
+        <Experience />
         <Skills />
-        <Projects />
-        <Contact />
+        <LatestWork />
+        <Education />
+        <ToolkitMarquee />
+        <ProjectsSlider /> 
       </main>
       <Footer />
     </>

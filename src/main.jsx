@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./app/App.jsx";
 import "./index.css";
-
+import { LanguageProvider } from "./i18n/LanguageProvider.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode> 
+      <LanguageProvider>
+        <App />
+      </LanguageProvider> 
   </React.StrictMode>
 );
