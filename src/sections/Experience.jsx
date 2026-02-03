@@ -72,7 +72,7 @@ export default function Experience() {
             </div>
 
             <div className="relative">
-              <div className="flex items-start gap-8">
+              <div className="flex flex-wrap md:flex-wrap-reverse items-start gap-8">
                 <div className="text-[96px] font-extrabold leading-none text-green-900 sm:text-[120px]">
                   05
                 </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import HoverGlowCard from "../components/HoverGlowCard";
+import Heroimg from "../assets/AmanSharma.jpeg";
 
 const items = [
   {
@@ -70,7 +71,7 @@ export default function LatestWork() {
                     <HoverGlowCard
                 className="group rounded-[22px] bg-zinc-950 dark:bg-green-900 p-7 shadow-[0_22px_70px_rgba(0,0,0,0.45)] ring-1 ring-white/5 backdrop-blur transition"
               >
-                <div className="flex items-start gap-3">
+                <div className="flex  items-start gap-3">
                   <div className="text-base font-extrabold text-white">
                     {it.no}
                   </div>
@@ -96,10 +97,7 @@ export default function LatestWork() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.55 }}
             className="relative mx-auto w-full max-w-[520px]"
-          >
-            {/* big dark ring behind */}
-            <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5" />
-            <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10" />
+          > 
 
             {/* floating pink circles */}
             <FloatingCircle className="left-10 top-24 h-14 w-14 bg-green-600" />
@@ -122,24 +120,18 @@ export default function LatestWork() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
-              className="relative mx-auto grid h-[460px] w-[460px] place-items-end overflow-hidden rounded-full"
-            >
-              {/* glow */}
-              <div className="pointer-events-none absolute inset-0 rounded-full shadow-[0_0_80px_rgba(236,72,153,0.18)]" />
-
+              className="relative mx-auto grid h-full w-full place-items-end overflow-hidden rounded-full"
+            > 
               <img
-                src="/profile.png"
+                src={Heroimg}
                 alt="Profile"
-                className="h-[520px] w-[520px] object-cover object-top"
+                className="h-[500px] w-full object-cover object-top"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                 }}
               />
 
-              {/* fallback if no image */}
-              <div className="grid h-full w-full place-items-center rounded-full bg-gradient-to-b from-zinc-800 to-zinc-950 text-white/70">
-                Add <code className="mx-2 rounded bg-black/40 px-2 py-1">public/profile.png</code>
-              </div>
+             
 
               {/* bottom cut shadow */}
               <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent" />

@@ -110,7 +110,7 @@ export default function Navbar() {
                     )}
                   >
                     {isActive && (
-                      <span className="absolute inset-0 -z-10 rounded-xl bg-green-900 shadow-[0_0_30px_rgba(236,72,153,0.35)]" />
+                      <span className="absolute inset-0 -z-10 rounded-xl bg-green-900" />
                     )}
                     {item.label}
                   </a>
@@ -128,7 +128,7 @@ export default function Navbar() {
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="grid h-10 w-10 place-items-center rounded-full border bg-white/50 text-zinc-800 transition hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10"
+                  className="grid h-10 w-10 place-items-center rounded-full border bg-green-900 text-white hover:text-white transition  dark:border-white/10 "
                 >
                   <Icon size={18} />
                 </a>
@@ -138,7 +138,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setDark((v) => !v)}
-              className="grid h-10 w-10 place-items-center rounded-full border bg-white/50 text-zinc-800 transition hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10"
+              className="grid h-10 w-10 place-items-center rounded-full border bg-green-900 text-white transition  dark:border-white/10 "
               aria-label="Toggle theme"
             >
               {dark ? <Sun size={18} /> : <Moon size={18} />}
@@ -147,7 +147,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMenuOpen((v) => !v)}
-              className="grid h-10 w-10 place-items-center rounded-full bg-green-900 text-white transition hover:brightness-110 md:hidden"
+              className="grid h-10 w-10 place-items-center rounded-full border bg-green-900 text-white transition  dark:border-white/10  md:hidden"
               aria-label="Open menu"
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -191,7 +191,7 @@ export default function Navbar() {
                       href={href}
                       target="_blank"
                       rel="noreferrer"
-                      className="grid h-10 w-10 place-items-center rounded-full border bg-white/50 text-zinc-800 transition hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10"
+                      className="grid h-10 w-10 place-items-center rounded-full border bg-green-900 text-white hover:text-white transition  dark:border-white/10 "
                     >
                       <Icon size={18} />
                     </a>

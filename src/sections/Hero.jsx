@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { useLang } from "../i18n/LanguageProvider";
-
+import Heroimg from "../assets/AmanSharma.jpeg";
 
 function cn(...s) {
   return s.filter(Boolean).join(" ");
@@ -113,7 +113,7 @@ export default function Hero() {
             >
               {/* Replace with your own image */}
               <img
-                src="../src/assets/AmanSharma.jpeg"
+                src={Heroimg}
                 alt="Profile"
                 className="h-[420px] w-full object-cover object-top"
                  

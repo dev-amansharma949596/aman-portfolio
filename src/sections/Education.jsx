@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import HoverGlowCard from "../components/HoverGlowCard";
+import Heroimg from "../assets/AmanSharma.jpeg";
 
 const educationItems = [
   {
@@ -184,18 +185,14 @@ export default function Education() {
             <div className="overflow-hidden rounded-[22px] bg-zinc-200 shadow-[0_22px_70px_rgba(0,0,0,0.20)] dark:bg-white/5 dark:shadow-[0_22px_70px_rgba(0,0,0,0.45)]">
               {/* Put image in public/experience.jpg */}
               <img
-                src="/experience.jpg"
+                src={Heroimg}
                 alt="Work"
-                className="h-[320px] w-full object-cover md:h-[360px]"
+                className="h-[320px] w-full object-cover md:h-[500px]"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                 }}
               />
-
-              {/* fallback */}
-              <div className="grid h-[320px] place-items-center text-sm text-zinc-700 dark:text-white/70 md:h-[360px]">
-                Add <code className="mx-2 rounded bg-black/10 px-2 py-1 dark:bg-black/40">public/experience.jpg</code>
-              </div>
+ 
             </div>
           </motion.div>
         </div>

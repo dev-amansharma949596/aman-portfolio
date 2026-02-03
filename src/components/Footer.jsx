@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="py-6 text-center text-sm font-semibold text-zinc-600 dark:text-white/60">
           ©{new Date().getFullYear()} | All Rights Reserved By{" "}
-          <span className="text-zinc-900 dark:text-white/80">Rakeeb Hasan</span>
+          <span className="text-zinc-900 dark:text-white/80">Aman Sharma</span>
         </div>
       </div>
     </footer>
